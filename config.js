@@ -37,12 +37,12 @@ const CONFIG = {
   cvFile: "cv.pdf",  // PDF filename in the same folder
 
   title: {
-    en: "Electrical & Electronics Engineer",
-    fr: "Ingénieur Électrique & Électronique",
+    en: "Smart Electrical Systems Engineer",
+    fr: "Ingénieur en Management des systèmes électriques intelligents",
   },
   subtitle: {
-    en: "Specialising in Smart Electrical Systems",
-    fr: "Spécialiste en Systèmes Électriques Intelligents",
+    en: "Electrical and electronics engineering",
+    fr: "Ingénierie électrique et électronique",
   },
   bio: {
     en: `Fresh graduate in Electrical & Electronics Engineering, specialising in Smart Electrical Systems.
@@ -68,17 +68,33 @@ const CONFIG = {
       items: ["Power Systems", "Circuit Design", "PLC Programming", "Control Systems", "High Voltage Engineering"],
     },
     {
+    category: { en: "Programming & Embedded", fr: "Programmation & Embarqué" },
+    items: ["C/C++", "Python", "PIC", "RaspberryPI", "Arduino","ESP32/STM32","FPGA"],
+    },
+    {
       category: { en: "Smart Systems", fr: "Systèmes Intelligents" },
-      items: ["IoT Integration", "SCADA", "Smart Grid", "Energy Management", "Embedded Systems"],
+      items: ["IoT Integration", "Machine Learning", "Embedded Systems"],
     },
     {
-      category: { en: "Software & Tools", fr: "Logiciels & Outils" },
-      items: ["MATLAB / Simulink", "AutoCAD Electrical", "Python", "KiCad", "LabVIEW"],
+      category: { en: "CAD & Simulation", fr: "CAO & Simulation" },
+      items: ["MATLAB / Simulink", "Proteus", "Altium Designer"],
     },
     {
-      category: { en: "Standards & Methods", fr: "Normes & Méthodes" },
-      items: ["IEC 60364", "IEEE Standards", "Project Management", "Technical Documentation"],
+      category: { en: "Industrial Automation", fr: "Automation Industrielle" },
+      items: ["TIA Portal"],
     },
+    {
+      category: { en: "IoT & Connectivity", fr: "Connectivité & IoT" },
+      items: ["Node-RED"],
+    },
+    {
+      category: { en: "Big Data, Data processing and BI", fr: "Big Data, Traitement de données et BI" },
+      items: ["PowerBI", "Hadoop"  ,"Spark", "SQL/NoSQL"],
+    },
+    //{
+     // category: { en: "Standards & Methods", fr: "Normes & Méthodes" },
+     // items: ["IEC 60364", "IEEE Standards", "Project Management", "Technical Documentation"],
+    //},
   ],
 
   /* ── CERTIFICATIONS ─────────────────────────────────────────
@@ -125,16 +141,16 @@ const CONFIG = {
     {
       lang:  { en: "Arabic", fr: "Arabe" },
       level: { en: "Native",     fr: "Natif" },
-      flag:  "http://flags.fmcdn.net/data/flags/mini/ma.png",
+      flag:  "",
     },
     {
       lang:  { en: "English",    fr: "Anglais" },
       level: { en: "Fluent",     fr: "Courant" },
-      flag:  "🇬🇧",
+      flag:  "",
     },
     {
       lang:  { en: "French",     fr: "Français" },
-      level: { en: "Intermediate", fr: "Intermédiaire" },
+      level: { en: "Fluent", fr: "Courant" },
       flag:  "",
     },
     // Add more languages the same way ↑
@@ -142,12 +158,13 @@ const CONFIG = {
 
   /* ── SOFT SKILLS ─────────────────────────────────────────── */
   softSkills: [
-    { en: "Problem Solving",      fr: "Résolution de problèmes", icon: "🧠" },
-    { en: "Team Collaboration",   fr: "Travail en équipe",       icon: "🤝" },
-    { en: "Critical Thinking",    fr: "Pensée critique",         icon: "🔍" },
-    { en: "Adaptability",         fr: "Adaptabilité",            icon: "⚡" },
-    { en: "Technical Writing",    fr: "Rédaction technique",     icon: "✍️" },
-    { en: "Project Management",   fr: "Gestion de projet",       icon: "📋" },
+    { en: "Problem Solving",      fr: "Résolution de problèmes", icon: "" },
+    { en: "Team Collaboration",   fr: "Travail en équipe",       icon: "" },
+    { en: "Critical Thinking",    fr: "Pensée critique",         icon: "" },
+    { en: "Adaptability",         fr: "Adaptabilité",            icon: "" },
+    { en: "Fast Learning Ability",    fr: "Apprentissage rapide",     icon: "" },
+    { en: "Punctuality",   fr: "Ponctualité",       icon: "" },
+    { en: "Autonomy",   fr: "Autonomie",       icon: "" },
     // Add or remove soft skills freely ↑
   ],
 
@@ -155,11 +172,11 @@ const CONFIG = {
      To hide the entire hobbies section, comment out these lines:
      Change  hobbies: [  to  // hobbies: [  and so on.         */
   hobbies: [
-    { en: "Electronics Tinkering", fr: "Bidouillage électronique", icon: "🔌" },
-    { en: "3D Printing",           fr: "Impression 3D",            icon: "🖨️" },
-    { en: "Hiking",                fr: "Randonnée",                icon: "🏔️" },
-    { en: "Photography",           fr: "Photographie",             icon: "📷" },
-    { en: "Chess",                 fr: "Échecs",                   icon: "♟️" },
+    { en: "Electronics Tinkering", fr: "Tinkering électronique", icon: "" },
+    { en: "3D Printing",           fr: "Impression 3D",            icon: "" },
+    { en: "Robotics and prototyping",          fr: "Robotique et prototypage",                icon: "" },
+    { en: "Volleyball",           fr: "Volleyball",             icon: "" },
+    { en: "Chess",                 fr: "Échecs",                   icon: "" },
     // Add or remove hobbies freely ↑
   ],
 
