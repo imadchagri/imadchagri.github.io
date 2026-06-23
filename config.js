@@ -138,20 +138,21 @@ const CONFIG = {
      level options: "Native" / "Fluent" / "Professional" / "Intermediate" / "Beginner"
      (also works in French: "Natif" / "Courant" / "Professionnel" / "Intermédiaire" / "Débutant") */
   languages: [
-    {
-      lang:  { en: "Arabic", fr: "Arabe" },
-      level: { en: "Native",     fr: "Natif" },
-      flag:  "",
-    },
+   
     {
       lang:  { en: "English",    fr: "Anglais" },
       level: { en: "Fluent",     fr: "Courant" },
-      flag:  "",
+      flag:  "En",
     },
     {
       lang:  { en: "French",     fr: "Français" },
       level: { en: "Fluent", fr: "Courant" },
-      flag:  "",
+      flag:  "Fr",
+    },
+     {
+      lang:  { en: "Arabic", fr: "Arabe" },
+      level: { en: "Native",     fr: "Natif" },
+      flag:  "Ar",
     },
     // Add more languages the same way ↑
   ],
@@ -183,9 +184,9 @@ const CONFIG = {
   /* ── EXPERIENCE ─────────────────────────────────────────── */
   experience: [
     {
-      role:        { en: "Electrical Engineering Intern",  fr: "Stagiaire Ingénieur Électrique" },
-      company:     "Company Name",
-      period:      "2023 — 2024",
+      role:        { en: "Railway consultant Intern",  fr: "Stagiaire consultant ferroviaire" },
+      company:     "Akkodis",
+      period:      "2026 — 2026",
       location:    "Lisbon, Portugal",
       description: {
         en: "Assisted in the design and commissioning of industrial electrical systems. Worked on control schematics, PLC configurations, and on-site testing.",
