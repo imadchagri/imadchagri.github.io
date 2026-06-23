@@ -32,7 +32,7 @@ const CONFIG = {
 
   /* ── PERSONAL INFO ──────────────────────────────────────────
      EN = English text    FR = French text                      */
-  name:   "Your Full Name",
+  name:   "Imad CHAGRI",
   avatar: "",         // URL to your photo, e.g. "https://i.imgur.com/abc.jpg"
   cvFile: "cv.pdf",  // PDF filename in the same folder
 
@@ -46,22 +46,19 @@ const CONFIG = {
   },
   bio: {
     en: `Fresh graduate in Electrical & Electronics Engineering, specialising in Smart Electrical Systems.
-I've built hands-on experience through engineering internships where I worked on real industrial
-systems — from control schematics to smart energy monitoring. I bring technical rigour, a fast
-learning curve, and a genuine passion for the infrastructure that powers the modern world.`,
-    fr: `Diplômé en ingénierie des systèmes électriques intelligents, j'ai acquis durant mes stages
-une expérience concrète en automatisation industrielle, systèmes embarqués et gestion de l'énergie.
-Ces expériences ont renforcé ma conviction : je veux concevoir des systèmes fiables, efficaces et
-intelligents. Je suis aujourd'hui à la recherche d'une opportunité pour contribuer, progresser et
-construire des choses qui ont du sens.`,
+    I've built hands-on experience through both personal and academic engineering projects and internships where I worked on real world systems and problems.
+     I bring technical rigour, a fast learning curve, and a genuine passion for the infrastructure that powers the modern world.`,
+    fr: `Ingénieur fraîchement diplômé en Électrique & Électronique, spécialisé en Systèmes Électriques Intelligents.
+    Mes stages et projets personnelles et académiques m'ont permis de travailler sur des systèmes et des problèmatiques réels.
+    Je combine rigueur technique, rapidité d'apprentissage et une vraie passion pour les infrastructures qui font tourner le monde moderne.`,
   },
 
   /* ── CONTACT ────────────────────────────────────────────── */
   contact: {
-    email:    "you@email.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    github:   "https://github.com/yourusername",
-    location: "Lisbon, Portugal",
+    email:    "chagriimad88@gmail.com",
+    linkedin: "https://linkedin.com/in/imad-chagri",
+    github:   "https://github.com/imadchagri",
+    location: "Casablanca, Morocco",
   },
 
   /* ── SKILLS ─────────────────────────────────────────────── */
@@ -95,21 +92,21 @@ construire des choses qui ont du sens.`,
       issuer:        "Cisco",
       year:          "2024",
       credentialUrl: "", // paste your credential URL here
-      badge:         "🌐",
+      badge:         "",
     },
     {
       name:          { en: "Google IT Support Certificate", fr: "Certificat Assistance IT Google" },
       issuer:        "Google",
       year:          "2023",
       credentialUrl: "",
-      badge:         "🔧",
+      badge:         "",
     },
     {
       name:          { en: "Fundamentals of Deep Learning", fr: "Fondamentaux du Deep Learning" },
       issuer:        "NVIDIA",
       year:          "2023",
       credentialUrl: "",
-      badge:         "🤖",
+      badge:         "",
     },
     // To hide a certification, add // at the start of each line:
     // {
@@ -126,9 +123,9 @@ construire des choses qui ont du sens.`,
      (also works in French: "Natif" / "Courant" / "Professionnel" / "Intermédiaire" / "Débutant") */
   languages: [
     {
-      lang:  { en: "Portuguese", fr: "Portugais" },
+      lang:  { en: "Arabic", fr: "Arabe" },
       level: { en: "Native",     fr: "Natif" },
-      flag:  "🇵🇹",
+      flag:  "http://flags.fmcdn.net/data/flags/mini/ma.png",
     },
     {
       lang:  { en: "English",    fr: "Anglais" },
@@ -138,7 +135,7 @@ construire des choses qui ont du sens.`,
     {
       lang:  { en: "French",     fr: "Français" },
       level: { en: "Intermediate", fr: "Intermédiaire" },
-      flag:  "🇫🇷",
+      flag:  "",
     },
     // Add more languages the same way ↑
   ],
