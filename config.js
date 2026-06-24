@@ -359,6 +359,180 @@ Résultats :
       image:   "",
       gallery: [],
     },
+  {
+  title: "CowWatch — Intelligent Livestock Monitoring",
+  description: {
+    en: "Edge AI system on Raspberry Pi that detects, tracks and monitors dairy cows in real time — measuring feeding, resting and movement routines and generating daily health alerts.",
+    fr: "Système Edge AI sur Raspberry Pi qui détecte, suit et surveille des vaches laitières en temps réel — mesure des routines d'alimentation, de repos et de mouvement avec génération d'alertes santé quotidiennes.",
+  },
+  details: {
+    en: `End-to-end computer vision pipeline deployed on a Raspberry Pi for intelligent, non-intrusive livestock monitoring in a farm environment.
+
+The system runs YOLOv8 for real-time cow detection and ByteTrack for multi-object tracking across video frames, allowing each individual animal to be followed continuously without physical tags.
+
+Key features:
+- Real-time detection and tracking of multiple cows simultaneously using YOLOv8 + ByteTrack
+- Behavioural routine analysis: feeding time, resting duration, movement patterns — all logged per animal
+- Automated daily health alert generation based on deviation from individual baseline behaviour
+- Fully embedded Edge AI pipeline — no cloud dependency, low latency, runs on Raspberry Pi 4
+- Data pipeline built with NumPy and Pandas for per-animal time-series behaviour logging
+- scikit-learn anomaly detection layer for flagging abnormal behavioural patterns
+
+Impact: Enables early detection of health issues (lameness, illness, estrus) before visible symptoms appear — reducing veterinary costs and improving herd welfare.`,
+    fr: `Pipeline de vision par ordinateur de bout en bout déployé sur Raspberry Pi pour la surveillance intelligente et non intrusive du bétail en environnement agricole.
+
+Le système utilise YOLOv8 pour la détection en temps réel et ByteTrack pour le suivi multi-objets sur les trames vidéo, permettant de suivre chaque animal individuellement sans étiquette physique.
+
+Fonctionnalités clés :
+- Détection et suivi en temps réel de plusieurs vaches simultanément avec YOLOv8 + ByteTrack
+- Analyse des routines comportementales : temps d'alimentation, durée de repos, patterns de mouvement — journalisés par animal
+- Génération automatique d'alertes santé quotidiennes basées sur les écarts par rapport au comportement individuel de référence
+- Pipeline Edge AI entièrement embarqué — sans dépendance cloud, faible latence, fonctionne sur Raspberry Pi 4
+- Pipeline de données construit avec NumPy et Pandas pour la journalisation comportementale par animal en séries temporelles
+- Couche de détection d'anomalies scikit-learn pour signaler les comportements anormaux
+
+Impact : Permet la détection précoce de problèmes de santé (boiterie, maladie, chaleurs) avant l'apparition de symptômes visibles — réduisant les coûts vétérinaires et améliorant le bien-être du troupeau.`,
+  },
+  tags: ["Edge AI", "Computer Vision", "YOLOv8", "ByteTrack", "Raspberry Pi", "Python", "OpenCV", "scikit-learn", "Livestock Tech"],
+  // link: "https://github.com/imadchagri/cowwatch",  // ← uncomment and paste your repo URL when ready
+  image:   "",
+  gallery: [],
+},
+{
+  title: "Indoor Positioning System — Real-Time Asset Tracking",
+  description: {
+    en: "Real-time indoor localisation system using ESP32 and Wi-Fi RSSI for logistics and mobile equipment tracking inside industrial facilities.",
+    fr: "Système de localisation intérieure en temps réel basé sur ESP32 et RSSI Wi-Fi pour la logistique et le suivi d'équipements mobiles en environnement industriel.",
+  },
+  details: {
+    en: `Custom-built real-time location system (RTLS) designed for GPS-denied industrial indoor environments where standard satellite positioning is unavailable.
+
+Architecture:
+- Multiple ESP32 anchor nodes deployed at fixed known positions throughout the facility
+- Mobile ESP32 tags attached to equipment broadcast their identity via ESP-NOW protocol
+- RSSI (Received Signal Strength Indicator) measurements from multiple anchors feed a trilateration algorithm
+- Raspberry Pi edge node aggregates anchor data, runs the positioning computation and serves a live visualisation dashboard
+
+Technical highlights:
+- ESP-NOW broadcast protocol chosen for its low-latency, connectionless communication — no Wi-Fi router dependency
+- Trilateration algorithm implemented in Python for real-time XY position estimation
+- Live floor-plan visualisation with matplotlib showing equipment positions updated in real time
+- pyserial interface between Raspberry Pi and ESP32 anchor network
+- System tested with positioning accuracy of ±1–2 metres in a multi-room environment
+
+Applications: Tool tracking, forklift monitoring, worker safety zones, equipment utilisation analysis in smart factories.`,
+    fr: `Système de localisation en temps réel (RTLS) conçu pour les environnements industriels intérieurs sans GPS où le positionnement satellitaire est indisponible.
+
+Architecture :
+- Plusieurs nœuds ancres ESP32 déployés à des positions fixes connues dans l'installation
+- Les tags ESP32 mobiles fixés aux équipements diffusent leur identité via le protocole ESP-NOW
+- Les mesures RSSI de plusieurs ancres alimentent un algorithme de trilatération
+- Un nœud edge Raspberry Pi agrège les données des ancres, effectue le calcul de positionnement et sert un tableau de bord de visualisation en direct
+
+Points techniques :
+- Protocole broadcast ESP-NOW choisi pour sa communication sans connexion et à faible latence — sans dépendance à un routeur Wi-Fi
+- Algorithme de trilatération implémenté en Python pour l'estimation de position XY en temps réel
+- Visualisation de plan d'étage en direct avec matplotlib affichant les positions des équipements en temps réel
+- Interface pyserial entre le Raspberry Pi et le réseau d'ancres ESP32
+- Système testé avec une précision de positionnement de ±1–2 mètres en environnement multi-pièces
+
+Applications : Suivi d'outillage, surveillance de chariots élévateurs, zones de sécurité opérateurs, analyse d'utilisation des équipements en usines intelligentes.`,
+  },
+  tags: ["ESP32", "RTLS", "ESP-NOW", "Wi-Fi RSSI", "Trilateration", "Raspberry Pi", "Python", "C/C++", "IoT", "Smart Factory"],
+  // link: "https://github.com/imadchagri/indoor-positioning",  // ← uncomment when ready
+  image:   "",
+  gallery: [],
+},
+{
+  title: "WaterMonitor — Smart Water Resource Management",
+  description: {
+    en: "Connected IoT device for real-time water flow monitoring with cloud data logging and remote access from smartphone or PC.",
+    fr: "Appareil IoT connecté pour la surveillance en temps réel du débit d'eau avec sauvegarde cloud et accès à distance depuis smartphone ou PC.",
+  },
+  details: {
+    en: `End-to-end IoT solution for water consumption monitoring — combining embedded sensing, cloud data persistence and remote access in a single low-cost device.
+
+Hardware & sensing:
+- ESP32 microcontroller as the core compute and connectivity unit
+- YF-S201 Hall-effect flow sensor for real-time volumetric flow rate measurement (pulse counting method)
+- Flow rate computed from pulse frequency: Q (L/min) = Pulse frequency / 7.5
+
+Software & connectivity:
+- Embedded firmware in C++ (Arduino framework) handling sensor reading, WiFi connection and Firebase push
+- Firebase Realtime Database used for automatic timestamped cloud data logging — no data loss on connectivity interruption
+- Remote dashboard accessible from any browser (smartphone or PC) for live and historical flow visualisation
+- Threshold-based alert system: push notification triggered when flow exceeds configurable limits (leak detection)
+
+Use cases: Residential water usage tracking, irrigation monitoring, industrial fluid consumption auditing, early leak detection.`,
+    fr: `Solution IoT de bout en bout pour la surveillance de la consommation d'eau — combinant capteur embarqué, persistance cloud et accès à distance dans un appareil à faible coût.
+
+Matériel & capteur :
+- Microcontrôleur ESP32 comme unité de calcul et connectivité centrale
+- Capteur de débit à effet Hall YF-S201 pour la mesure volumétrique en temps réel (méthode de comptage d'impulsions)
+- Débit calculé à partir de la fréquence d'impulsions : Q (L/min) = Fréquence d'impulsions / 7,5
+
+Logiciel & connectivité :
+- Firmware embarqué en C++ (framework Arduino) gérant la lecture capteur, la connexion WiFi et l'envoi Firebase
+- Firebase Realtime Database pour la journalisation cloud automatique horodatée — sans perte de données en cas d'interruption
+- Tableau de bord distant accessible depuis n'importe quel navigateur (smartphone ou PC) pour la visualisation en direct et historique
+- Système d'alertes par seuil : notification déclenchée lorsque le débit dépasse des limites configurables (détection de fuites)
+
+Cas d'usage : Suivi de consommation résidentielle, surveillance d'irrigation, audit de consommation de fluides industriels, détection précoce de fuites.`,
+  },
+  tags: ["ESP32", "IoT", "YF-S201", "Firebase", "C++", "Arduino", "Cloud", "Real-Time", "Water Management"],
+  // link: "https://github.com/imadchagri/watermonitor",  // ← uncomment when ready
+  image:   "",
+  gallery: [],
+},
+{
+  title: "Educational Path Optimisation — Academic Journey Planner",
+  description: {
+    en: "Operations research project to optimise the academic journey of engineering students by identifying the most beneficial course and activity combinations using graph theory.",
+    fr: "Projet de recherche opérationnelle visant à optimiser le parcours académique des élèves ingénieurs en identifiant les combinaisons de cours et d'activités les plus bénéfiques via la théorie des graphes.",
+  },
+  details: {
+    en: `Applied operations research and graph theory to solve a real-world academic planning problem: given a set of courses, prerequisites, and activity combinations, find the optimal path through an engineering curriculum that maximises learning value and career readiness.
+
+Problem modelling:
+- Curriculum modelled as a Directed Acyclic Graph (DAG) where nodes are courses/activities and edges represent prerequisite relationships or scheduling constraints
+- Edge weights encode the combined value of a course pair (skill synergy, career relevance, difficulty balance)
+- Objective: find the path through the graph that maximises cumulative weight subject to time and credit constraints
+
+Algorithms & methods:
+- Dijkstra's algorithm and dynamic programming applied for shortest/optimal path computation
+- Bellman-Ford variant explored for handling negative weight edges (penalising redundant skill overlap)
+- Sensitivity analysis performed to test robustness of the optimal path under different weighting schemes
+- NetworkX used for graph construction, manipulation and algorithm benchmarking
+- Results visualised with Matplotlib: interactive DAG plots, path highlighting, weight heatmaps
+
+Outcomes:
+- Identified 3 optimal academic tracks for different career goals (research, industry, entrepreneurship)
+- Demonstrated that standard sequential scheduling left 18% of skill-building potential unused
+- Documented as a full technical report with algorithmic complexity analysis`,
+    fr: `Application de la recherche opérationnelle et de la théorie des graphes pour résoudre un problème réel de planification académique : étant donné un ensemble de cours, de prérequis et de combinaisons d'activités, trouver le chemin optimal à travers un programme d'ingénierie maximisant la valeur d'apprentissage et la préparation professionnelle.
+
+Modélisation du problème :
+- Programme modélisé comme un Graphe Orienté Acyclique (DAG) où les nœuds sont des cours/activités et les arêtes représentent les relations de prérequis ou contraintes de planification
+- Les poids des arêtes encodent la valeur combinée d'une paire de cours (synergie de compétences, pertinence professionnelle, équilibre de difficulté)
+- Objectif : trouver le chemin dans le graphe qui maximise le poids cumulé sous contraintes de temps et de crédits
+
+Algorithmes & méthodes :
+- Algorithme de Dijkstra et programmation dynamique appliqués pour le calcul de chemin optimal
+- Variante Bellman-Ford explorée pour les arêtes à poids négatif (pénalisant la redondance de compétences)
+- Analyse de sensibilité pour tester la robustesse du chemin optimal selon différents schémas de pondération
+- NetworkX pour la construction, manipulation du graphe et benchmark des algorithmes
+- Résultats visualisés avec Matplotlib : graphes DAG interactifs, mise en valeur des chemins, heatmaps de poids
+
+Résultats :
+- Identification de 3 parcours académiques optimaux pour différents objectifs (recherche, industrie, entrepreneuriat)
+- Démonstration que la planification séquentielle standard laissait 18% du potentiel de développement de compétences inexploité
+- Documenté sous forme de rapport technique complet avec analyse de complexité algorithmique`,
+  },
+  tags: ["Python", "NetworkX", "Graph Theory", "Operations Research", "DAG", "Dijkstra", "NumPy", "Matplotlib", "Optimisation"],
+  // link: "https://github.com/imadchagri/educational-path-optimisation",  // ← uncomment when ready
+  image:   "",
+  gallery: [],
+},
   ],
 
   /* ── BLOG / ARTICLES ─────────────────────────────────────── */
