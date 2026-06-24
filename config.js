@@ -131,17 +131,17 @@ les infrastructures qui font tourner le monde moderne.`,
     {
       lang:  { en: "Arabic",   fr: "Arabe" },
       level: { en: "Native",   fr: "Natif" },
-      flag:  "🇲🇦",
+      flag:  "Ar",
     },
     {
       lang:  { en: "French",   fr: "Français" },
       level: { en: "Fluent",   fr: "Courant" },
-      flag:  "🇫🇷",
+      flag:  "Fr",
     },
     {
       lang:  { en: "English",  fr: "Anglais" },
       level: { en: "Fluent",   fr: "Courant" },
-      flag:  "🇬🇧",
+      flag:  "En",
     },
   ],
 
@@ -250,15 +250,21 @@ Direction Assistée Électrique (DAE) — Étude & Documentation technique :
   education: [
     {
       degree: { en: "Engineering Degree — Smart Electrical Systems Management", fr: "Diplôme d'Ingénieur — Management des Systèmes Électriques Intelligents" },
-      school: "University Name",
-      period: "2022 — 2025",
-      note:   { en: "Final Year Project: Edge AI for Railway Switch Fault Diagnosis", fr: "Projet de Fin d'Études : Edge AI pour le diagnostic de défauts d'aiguillages ferroviaires" },
+      school: "Ecole Nationale Superieure d'Arts et Métiers - Casablanca",
+      period: "2023 — 2026",
+      //note:   { en: "Final Year Project: Edge AI for Railway Switch Fault Diagnosis", fr: "Projet de Fin d'Études : Edge AI pour le diagnostic de défauts d'aiguillages ferroviaires" },
     },
     {
-      degree: { en: "Preparatory Classes — Physics & Engineering Sciences (PSI)", fr: "Classes Préparatoires — Physique & Sciences de l'Ingénieur (PSI)" },
-      school: "University Name",
-      period: "2020 — 2022",
-      note:   { en: "", fr: "" },
+      degree: { en: "Integrated Preparatory Classes", fr: "Classes Préparatoires Integrés" },
+      school: "Ecole Nationale Superieure d'Arts et Métiers - Casablanca",
+      period: "2020 — 2023",
+      //note:   { en: "", fr: "" },
+    },
+    {
+      degree: { en: "International Baccalaureat degree - Physics and science", fr: "Baccalaureat International option français (BIOF) - Physique-chimie " },
+      school: "Lycée Moukhtar Soussi - Casablanca",
+      period: "2019 — 2020",
+      //note:   { en: "", fr: "" },
     },
   ],
 
