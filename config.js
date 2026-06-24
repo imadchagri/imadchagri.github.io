@@ -1,29 +1,9 @@
-/**
- * ╔══════════════════════════════════════════════════════════════╗
- * ║         PORTFOLIO CONFIG — THE ONLY FILE YOU EDIT           ║
- * ║  Every change here updates your entire website instantly.   ║
- * ╚══════════════════════════════════════════════════════════════╝
- *
- * ── HOW TO COMMENT OUT A SECTION ───────────────────────────────
- *
- *  1. Single line  →  put  //  at the start:
- *       // hobbies: [...],
- *
- *  2. Multiple lines  →  wrap with  /* ... * /  (no space):
- *       /*
- *         hobbies: [...],
- *       * /
- *
- *  To bring it back: delete the  //  or  /* ... * /
- */
-
 const CONFIG = {
 
-  /* ── PERSONAL INFO ──────────────────────────────────────────
-     EN = English text    FR = French text                      */
+  /* ── PERSONAL INFO ──────────────────────────────────────── */
   name:   "Imad CHAGRI",
-  avatar: "",        // URL to your photo, e.g. "https://i.imgur.com/abc.jpg"
-  cvFile: "cv.pdf", // PDF filename in the same folder
+  avatar: "",
+  cvFile: "cv.pdf",
 
   title: {
     en: "Smart Electrical Systems Engineer",
@@ -67,16 +47,20 @@ les infrastructures qui font tourner le monde moderne.`,
       items: ["IoT Integration", "Machine Learning", "Edge AI", "Embedded Systems", "MCSA"],
     },
     {
+      category: { en: "IoT & Connectivity", fr: "Connectivité & IoT" },
+      items: ["Node-RED"],
+    },
+    {
       category: { en: "CAD & Simulation", fr: "CAO & Simulation" },
       items: ["MATLAB / Simulink", "Simscape", "Proteus", "Altium Designer"],
     },
     {
       category: { en: "Industrial Automation", fr: "Automatisme Industriel" },
-      items: ["TIA Portal", "Model-Based Design"],
+      items: ["TIA Portal"],
     },
     {
       category: { en: "Data & BI", fr: "Data & BI" },
-      items: ["Power BI", "Hadoop", "Spark", "SQL / NoSQL", "Node-RED"],
+      items: ["Power BI", "Hadoop", "Spark", "SQL / NoSQL"],
     },
   ],
 
@@ -87,56 +71,56 @@ les infrastructures qui font tourner le monde moderne.`,
       issuer:        "University of Toronto",
       year:          "2025",
       credentialUrl: "",
-      badge:         "🚗",
+      badge:         "",
     },
     {
       name:          { en: "IT Automation with Python Professional Certificate", fr: "Certificat Professionnel Automatisation IT avec Python" },
       issuer:        "Google",
       year:          "2025",
       credentialUrl: "",
-      badge:         "🐍",
+      badge:         "",
     },
     {
       name:          { en: "Cybersecurity Professional Certificate", fr: "Certificat Professionnel Cybersécurité" },
       issuer:        "Google",
       year:          "2025",
       credentialUrl: "",
-      badge:         "🔐",
+      badge:         "",
     },
     {
       name:          { en: "Ethical Hacking Professional Certificate", fr: "Certificat Professionnel Ethical Hacking" },
       issuer:        "IBM",
       year:          "2025",
       credentialUrl: "",
-      badge:         "🛡️",
+      badge:         "",
     },
     {
       name:          { en: "Project Management Professional Certificate", fr: "Certificat Professionnel Gestion de Projet" },
       issuer:        "Google",
       year:          "2025",
       credentialUrl: "",
-      badge:         "📋",
+      badge:         "",
     },
     {
       name:          { en: "HCIA-5G V2.0", fr: "HCIA-5G V2.0" },
       issuer:        "Huawei",
       year:          "2024",
       credentialUrl: "",
-      badge:         "📡",
+      badge:         "",
     },
     {
       name:          { en: "PCAP — Programming Essentials in Python", fr: "PCAP — Fondamentaux de la programmation Python" },
       issuer:        "Cisco Networking Academy",
       year:          "2023",
       credentialUrl: "",
-      badge:         "🐍",
+      badge:         "",
     },
     {
       name:          { en: "CLA — Programming Essentials in C", fr: "CLA — Fondamentaux de la programmation C" },
       issuer:        "Cisco Networking Academy",
       year:          "2023",
       credentialUrl: "",
-      badge:         "⚙️",
+      badge:         "",
     },
   ],
 
@@ -163,22 +147,22 @@ les infrastructures qui font tourner le monde moderne.`,
 
   /* ── SOFT SKILLS ─────────────────────────────────────────── */
   softSkills: [
-    { en: "Problem Solving",      fr: "Résolution de problèmes", icon: "🧠" },
-    { en: "Team Collaboration",   fr: "Travail en équipe",       icon: "🤝" },
-    { en: "Critical Thinking",    fr: "Pensée critique",         icon: "🔍" },
-    { en: "Adaptability",         fr: "Adaptabilité",            icon: "⚡" },
-    { en: "Fast Learner",         fr: "Apprentissage rapide",    icon: "🚀" },
-    { en: "Punctuality",          fr: "Ponctualité",             icon: "⏱️" },
-    { en: "Autonomy",             fr: "Autonomie",               icon: "🎯" },
+    { en: "Problem Solving",      fr: "Résolution de problèmes", icon: "" },
+    { en: "Team Collaboration",   fr: "Travail en équipe",       icon: "" },
+    { en: "Critical Thinking",    fr: "Pensée critique",         icon: "" },
+    { en: "Adaptability",         fr: "Adaptabilité",            icon: "" },
+    { en: "Fast Learner",         fr: "Apprentissage rapide",    icon: "" },
+    { en: "Punctuality",          fr: "Ponctualité",             icon: "" },
+    { en: "Autonomy",             fr: "Autonomie",               icon: "" },
   ],
 
   /* ── HOBBIES ─────────────────────────────────────────────── */
   hobbies: [
-    { en: "Electronics Tinkering",     fr: "Tinkering électronique",  icon: "🔌" },
-    { en: "3D Printing",               fr: "Impression 3D",           icon: "🖨️" },
-    { en: "Robotics & Prototyping",    fr: "Robotique & Prototypage", icon: "🤖" },
-    { en: "Volleyball",                fr: "Volleyball",              icon: "🏐" },
-    { en: "Chess",                     fr: "Échecs",                  icon: "♟️" },
+    { en: "Electronics Tinkering",     fr: "Tinkering électronique",  icon: "" },
+    { en: "3D Printing",               fr: "Impression 3D",           icon: "" },
+    { en: "Robotics & Prototyping",    fr: "Robotique & Prototypage", icon: "" },
+    { en: "Volleyball",                fr: "Volleyball",              icon: "" },
+    { en: "Chess",                     fr: "Échecs",                  icon: "" },
   ],
 
   /* ── EXPERIENCE ─────────────────────────────────────────────
@@ -213,6 +197,43 @@ les infrastructures qui font tourner le monde moderne.`,
       },
       tags: ["Edge AI", "MCSA", "Machine Learning", "MATLAB/Simulink", "Simscape", "Model-Based Design", "STM32H7", "Railway S700K", "Fault Diagnosis", "Predictive Maintenance"],
     },
+  {
+  role:    { en: "Automotive Systems Engineering Intern", fr: "Stagiaire Ingénieur Systèmes Automobiles" },
+  company: "Capgemini Engineering",   // ← replace with the real company
+  period:  "07/2025 — 09/2025",   // ← replace with real dates
+  location: "Casablanca, Morocco",       // ← replace with real location
+  description: {
+    en: "Technical study and documentation of embedded chassis sensors and Electric Power Steering (EPS) systems — contributing to the validation and integration of safety-critical automotive subsystems.",
+    fr: "Étude et documentation technique des capteurs embarqués du châssis automobile et du système de Direction Assistée Électrique (DAE) — contribution à la validation et l'intégration de sous-systèmes automobiles critiques.",
+  },
+  details: {
+    en: `Technical study and documentation of embedded automotive systems, focusing on chassis-integrated sensors and Electric Power Steering (EPS) — two safety-critical subsystems at the core of modern vehicle dynamics and driver assistance.
+
+Chassis Sensors — Technical Study & Documentation:
+• Reviewed and documented the architecture and operating principles of chassis-embedded sensors (ABS wheel speed sensors, ride height sensors, accelerometers, gyroscopes)
+• Analysed signal conditioning chains and communication interfaces (CAN bus, LIN bus)
+• Produced structured technical datasheets and integration documentation for use by the engineering team
+
+Electric Power Steering (EPS) — Technical Study & Documentation:
+• Studied the functional architecture of the EPS system including torque sensors, ECU control logic, and brushless DC motor actuation
+• Documented the control strategy and failure modes (FMEA-oriented analysis)
+• Benchmarked EPS specifications against international automotive standards (ISO 26262 functional safety awareness)
+• Contributed to the technical documentation library used for system validation`,
+    fr: `Étude et documentation technique des systèmes automobiles embarqués, axée sur les capteurs intégrés au châssis et la Direction Assistée Électrique (DAE) — deux sous-systèmes critiques au cœur de la dynamique véhicule et des aides à la conduite.
+
+Capteurs du châssis — Étude & Documentation technique :
+• Analyse et documentation de l'architecture et des principes de fonctionnement des capteurs embarqués au châssis (capteurs de vitesse ABS, capteurs de hauteur de caisse, accéléromètres, gyroscopes)
+• Analyse des chaînes de conditionnement de signal et des interfaces de communication (bus CAN, bus LIN)
+• Production de fiches techniques structurées et de documentation d'intégration à destination des équipes ingénierie
+
+Direction Assistée Électrique (DAE) — Étude & Documentation technique :
+• Étude de l'architecture fonctionnelle du système DAE : capteur de couple, logique de contrôle ECU et actionnement moteur BLDC
+• Documentation de la stratégie de contrôle et des modes de défaillance (analyse orientée AMDEC)
+• Benchmark des spécifications DAE par rapport aux normes automobiles internationales (sensibilisation ISO 26262 sécurité fonctionnelle)
+• Contribution à la bibliothèque de documentation technique utilisée pour la validation système`,
+  },
+  tags: ["Automotive Systems", "Chassis Sensors", "EPS / DAE", "CAN Bus", "FMEA", "ISO 26262", "Technical Documentation", "ECU", "BLDC Motor"],
+},
     // ── Add more internships below using the same structure ──
     // {
     //   role:        { en: "...", fr: "..." },
