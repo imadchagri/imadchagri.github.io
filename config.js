@@ -104,26 +104,61 @@ const CONFIG = {
      badge: emoji or leave "" for the default icon              */
   certifications: [
     {
-      name:          { en: "CCNA: Introduction to Networks", fr: "CCNA : Introduction aux Réseaux" },
-      issuer:        "Cisco",
-      year:          "2024",
+      name:          { en: "University of toronto : Self driving cars specialization", fr: "University of toronto : Self driving cars specialization" },
+      issuer:        "University of toronto",
+      year:          "2025",
       credentialUrl: "", // paste your credential URL here
       badge:         "",
     },
     {
-      name:          { en: "Google IT Support Certificate", fr: "Certificat Assistance IT Google" },
+      name:          { en: "Google IT Automation Professional Certificate", fr: "Google IT Automation Professional Certificate" },
       issuer:        "Google",
-      year:          "2023",
+      year:          "2025",
       credentialUrl: "",
       badge:         "",
     },
     {
-      name:          { en: "Fundamentals of Deep Learning", fr: "Fondamentaux du Deep Learning" },
-      issuer:        "NVIDIA",
+      name:          { en: "Google Cybersecurity Professional Certificate", fr: "Google Cybersecurity Professional Certificate" },
+      issuer:        "Google",
+      year:          "2025",
+      credentialUrl: "",
+      badge:         "",
+    },
+    {
+      name:          { en: "IBM Ethical Hacking Professional Certificate", fr: "IBM Ethical Hacking Professional Certificate" },
+      issuer:        "IBM",
+      year:          "2025",
+      credentialUrl: "",
+      badge:         "",
+    },
+    {
+      name:          { en: "Google Project Management Professional Certificate", fr: "Google Project Management Professional Certificate" },
+      issuer:        "Google",
+      year:          "2025",
+      credentialUrl: "",
+      badge:         "",
+    },
+    {
+      name:          { en: "HUAWEI iLEARNING : HCIA-5G V2.0", fr: "HUAWEI iLEARNING : HCIA-5G V2.0" },
+      issuer:        "HUAWEI",
+      year:          "2024",
+      credentialUrl: "",
+      badge:         "",
+    },
+    {
+      name:          { en: "PCAP :Programming essentials in Python", fr: "PCAP :Programming essentials in Python" },
+      issuer:        "Cisco Networking Academy",
+      year:          "2023",
+      credentialUrl: "",
+      badge:         "",
+    },{
+      name:          { en: "CLA :Programming essentials in C", fr: "CLA :Programming essentials in C" },
+      issuer:        "Cisco Networking Academy",
       year:          "2023",
       credentialUrl: "",
       badge:         "",
     },
+    // 
     // To hide a certification, add // at the start of each line:
     // {
     //   name: { en: "...", fr: "..." },
@@ -184,15 +219,26 @@ const CONFIG = {
   /* ── EXPERIENCE ─────────────────────────────────────────── */
   experience: [
     {
-      role:        { en: "Railway consultant Intern",  fr: "Stagiaire consultant ferroviaire" },
+      role:        { en: "Railway consultant Intern - Final Year Project Internship",  fr: "Stagiaire consultant ferroviaire - Stage Projet de Fin d'Etudes" },
       company:     "Akkodis",
-      period:      "2026 — 2026",
-      location:    "Lisbon, Portugal",
+      period:      "02/2026 — 08/2026",
+      location:    "Casablanca, Morocco",
+      description: {
+        en: "Assisted in the design and commissioning of industrial electrical systems. Worked on control schematics, PLC configurations, and on-site testing.",
+        fr: "Développement d’une solution Edge AI embarquée pour lediagnostic intelligent non intrusif par analyse du courant moteur (MCSA) pour la classification des défauts des aiguillages ferroviaires type S700K.",
+      },
+      tags: ["Railway switch", "MATLAB/Simulink", "Simscape","Model-Based Design","Siemmens 700Kpoint machine","MCSA","Machine Learning","Edge AI","Fault diagnosis","Predictive Maintenance","STM32H7"],
+    },
+    {
+      role:        { en: "Railway consultant Intern - Final Year Project Internship",  fr: "Stagiaire consultant ferroviaire - Stage Projet de Fin d'Etudes" },
+      company:     "Akkodis",
+      period:      "02/2026 — 08/2026",
+      location:    "Casablanca, Morocco",
       description: {
         en: "Assisted in the design and commissioning of industrial electrical systems. Worked on control schematics, PLC configurations, and on-site testing.",
         fr: "Participation à la conception et mise en service de systèmes électriques industriels. Travail sur les schémas de contrôle, la configuration d'automates et les tests sur site.",
       },
-      tags: ["PLC", "AutoCAD", "Control Systems"],
+      tags: ["Railway switch", "MATLAB/Simulink", "Simscape","Model-Based Design","Siemmens 700Kpoint machine","MCSA","Machine Learning","Edge AI","Fault diagnosis","Predictive Maintenance","STM32H7"],
     },
   ],
 
