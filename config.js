@@ -12,8 +12,8 @@ const CONFIG = {
      heroBackground: an image URL or file path placed next to this file,
                      e.g. "hero.jpg". Leave "" for the elegant default.   */
   settings: {
-    palette:        "blue",
-    theme:          "light",
+    palette:        "indigo",
+    theme:          "dark",
     lang:           "en",
     heroBackground: "Sousuke-Aizen-Wallpaper-8k.jpg",
     formEndpoint:   "https://formspree.io/f/xwvdlvna",
