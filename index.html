@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-palette="blue">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#2c63d8" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#about" class="nav-logo" id="nav-name"></a>
+      <ul class="nav-links nav-desktop" id="nav-links"></ul>
+      <div class="nav-controls">
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language"><span id="lang-label">FR</span></button>
+        <button class="ctrl-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile"></div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="about" class="hero" id="hero">
+      <div class="hero-bg" id="hero-bg"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-eyebrow" data-ui="heroEyebrow"></p>
+          <h1 class="hero-name" id="hero-name"></h1>
+          <p class="hero-role" id="hero-role"></p>
+          <p class="hero-bio" id="hero-bio"></p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" data-ui="cta1"></a>
+            <a href="#projects" class="btn-secondary" data-ui="cta2"></a>
+          </div>
+          <div class="hero-meta" id="hero-meta"></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-ring"></div>
+          <div class="avatar" id="avatar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ───────────────────────────────────────── -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="skillsEyebrow"></p>
+          <h2 class="section-title" data-ui="skillsTitle"></h2>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+        <div class="sub-grid" id="sub-grid"></div>
+        <div id="hobbies-section"></div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ───────────────────────────────────── -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="expEyebrow"></p>
+          <h2 class="section-title" data-ui="expTitle"></h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ─────────────────────────────────────── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="projectsEyebrow"></p>
+          <h2 class="section-title" data-ui="projectsTitle"></h2>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ───────────────────────────────── -->
+    <section id="certifications" class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="certEyebrow"></p>
+          <h2 class="section-title" data-ui="certTitle"></h2>
+        </div>
+        <div class="cert-grid" id="cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── BLOG ─────────────────────────────────────────── -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="blogEyebrow"></p>
+          <h2 class="section-title" data-ui="blogTitle"></h2>
+        </div>
+        <div class="blog-list" id="blog-list"></div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ──────────────────────────────────────── -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-ui="contactEyebrow"></p>
+          <h2 class="section-title" data-ui="contactTitle"></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal" id="contact-info"></div>
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name" data-ui="fName"></label>
+                <input type="text" id="f-name" name="name" data-ui-ph="fNamePh" required />
+              </div>
+              <div class="form-group">
+                <label for="f-email" data-ui="fEmail"></label>
+                <input type="email" id="f-email" name="email" data-ui-ph="fEmailPh" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-subject" data-ui="fSubject"></label>
+              <input type="text" id="f-subject" name="subject" data-ui-ph="fSubjectPh" />
+            </div>
+            <div class="form-group">
+              <label for="f-message" data-ui="fMessage"></label>
+              <textarea id="f-message" name="message" rows="5" data-ui-ph="fMessagePh" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%" id="form-btn" data-ui="send"></button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name" id="footer-name"></span>
+      <span class="footer-copy" data-ui="built"></span>
+    </div>
+  </footer>
+
+  <!-- ── FAB (mobile) ─────────────────────────────────────── -->
+  <div class="fab">
+    <button id="fab-lang" aria-label="Language"><span id="fab-lang-label">FR</span></button>
+    <button id="fab-theme" aria-label="Theme">
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+
+  <!-- ── MODAL ────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
