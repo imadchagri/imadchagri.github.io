@@ -185,7 +185,7 @@ les infrastructures qui font tourner le monde moderne.`,
 • Accidentology study and bibliographic review of railway switch failures
 • Proposal of a physical model of the S700K DC railway actuator and six fault cases
 • Simulation and generation of a synthetic labelled dataset
-• Development of a supervised machine learning model achieving 96% final accuracy and 100% recall on crtical faults
+• Development of a supervised machine learning model achieving 96% final accuracy and 100% recall on critical faults
 • Optimization of the machine learning model for deployment on an STM32H7 embedded platform
 • Development of an interactive dashboard prototype for railway switch maintenance centers featuring real-time track layout visualization, 
 switch position and health monitoring, fault detection and severity assessment, real-time alerts, decision-support recommendations, and maneuver/alert history tracking.`,
