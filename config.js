@@ -5,6 +5,18 @@ const CONFIG = {
   avatar: "aizen.jpg",
   cvFile: "cv.pdf",
 
+    /* ── SITE SETTINGS (safe to edit) ───────────────────────────
+     palette:        "blue" | "indigo" | "emerald" | "amber" | "mono"
+     theme:          "light" | "dark"
+     lang:           "en" | "fr"
+     heroBackground: an image URL or file path placed next to this file,
+                     e.g. "hero.jpg". Leave "" for the elegant default.   */
+  settings: {
+    palette:        "blue",
+    theme:          "light",
+    lang:           "en",
+    heroBackground: "",
+  },
   title: {
     en: "Smart Electrical Systems Engineer",
     fr: "Ingénieur en Management des Systèmes Électriques Intelligents",
