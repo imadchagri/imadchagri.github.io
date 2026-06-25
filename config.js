@@ -15,7 +15,7 @@ const CONFIG = {
     palette:        "blue",
     theme:          "light",
     lang:           "en",
-    heroBackground: "",
+    heroBackground: "Sousuke-Aizen-Wallpaper-8k.jpg",
   },
   title: {
     en: "Smart Electrical Systems Engineer",
