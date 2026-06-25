@@ -16,6 +16,7 @@ const CONFIG = {
     theme:          "light",
     lang:           "en",
     heroBackground: "Sousuke-Aizen-Wallpaper-8k.jpg",
+    formEndpoint:   "https://formspree.io/f/xwvdlvna",
   },
   title: {
     en: "Smart Electrical Systems Engineer",
