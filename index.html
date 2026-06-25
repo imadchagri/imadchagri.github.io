@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo" id="nav-name"></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"           data-i18n="nav.about"></a></li>
+        <li><a href="#skills"          data-i18n="nav.skills"></a></li>
+        <li><a href="#experience"      data-i18n="nav.experience"></a></li>
+        <li><a href="#projects"        data-i18n="nav.projects"></a></li>
+        <li><a href="#certifications"  data-i18n="nav.certifications"></a></li>
+        <li><a href="#blog"            data-i18n="nav.blog"></a></li>
+        <li><a href="#contact"         data-i18n="nav.contact"></a></li>
+        <li><a href="#" id="nav-cv" class="btn-nav" data-i18n="nav.cv" download></a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-toggle"  id="lang-toggle"  aria-label="Switch language"><span id="lang-label">FR</span></button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+        </button>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ───────────────────────────────────────────────── -->
+    <section id="about" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-text">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow"></p>
+          <h1 class="hero-name" id="hero-name"></h1>
+          <p class="hero-title"  id="hero-title"></p>
+          <p class="hero-bio"    id="hero-bio"></p>
+          <div class="hero-actions">
+            <a href="#contact"  class="btn-primary"   data-i18n="hero.cta1"></a>
+            <a href="#projects" class="btn-secondary"  data-i18n="hero.cta2"></a>
+          </div>
+          <div class="hero-meta" id="hero-meta"></div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrap">
+            <div class="avatar-placeholder" id="avatar-el">
+              <span id="avatar-initials"></span>
+            </div>
+          </div>
+          <div class="circuit-ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────────── -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="skills.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="skills.title"></h2>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+
+        <!-- Languages + Soft Skills side by side -->
+        <div class="sub-grid" id="sub-grid"></div>
+
+        <!-- Hobbies -->
+        <div id="hobbies-section"></div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ──────────────────────────────────────────── -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="exp.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="exp.title"></h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────────── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="projects.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="projects.title"></h2>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ─────────────────────────────────────── -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="cert.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="cert.title"></h2>
+        </div>
+        <div class="cert-grid" id="cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── BLOG ───────────────────────────────────────────────── -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="blog.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="blog.title"></h2>
+        </div>
+        <div class="blog-list" id="blog-list"></div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="contact.eyebrow"></p>
+          <h2 class="section-title"  data-i18n="contact.title"></h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info" id="contact-info"></div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name"    data-i18n="form.name"></label>
+                <input type="text"  id="f-name"    name="name"    data-i18n-ph="form.namePh"    required />
+              </div>
+              <div class="form-group">
+                <label for="f-email"   data-i18n="form.email"></label>
+                <input type="email" id="f-email"   name="email"   data-i18n-ph="form.emailPh"   required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-subject"   data-i18n="form.subject"></label>
+              <input type="text"  id="f-subject"   name="subject" data-i18n-ph="form.subjectPh" />
+            </div>
+            <div class="form-group">
+              <label for="f-message"   data-i18n="form.message"></label>
+              <textarea id="f-message" name="message" rows="5"   data-i18n-ph="form.messagePh" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="form-btn" data-i18n="form.send"></button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span id="footer-name"></span>
+      <span class="footer-copy" data-i18n="footer.built"></span>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING BAR (mobile) ──────────────────────────────── -->
+  <div class="fab-bar">
+    <button class="fab" id="fab-lang"  aria-label="Language"><span id="fab-lang-label">FR</span></button>
+    <button class="fab" id="fab-theme" aria-label="Theme">
+      <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+    </button>
+  </div>
+
+  <!-- ── PROJECT MODAL ──────────────────────────────────────── -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
