@@ -185,15 +185,19 @@ les infrastructures qui font tourner le monde moderne.`,
 • Accidentology study and bibliographic review of railway switch failures
 • Proposal of a physical model of the S700K DC railway actuator and six fault cases
 • Simulation and generation of a synthetic labelled dataset
-• Development of a supervised machine learning model achieving 97% final accuracy
-• Design of a prototype maintenance dashboard for track switch maintenance centres`,
+• Development of a supervised machine learning model achieving 96% final accuracy and 100% recall on crtical faults
+• Optimization of the machine learning model for deployment on an STM32H7 embedded platform
+• Development of an interactive dashboard prototype for railway switch maintenance centers featuring real-time track layout visualization, 
+switch position and health monitoring, fault detection and severity assessment, real-time alerts, decision-support recommendations, and maneuver/alert history tracking.`,
         fr: `Développement d'une solution Edge AI embarquée pour le diagnostic intelligent non intrusif par analyse du courant moteur (MCSA) pour la classification des défauts des aiguillages ferroviaires type S700K.
 
 • Accidentologie et étude bibliographique des défauts d'aiguillages ferroviaires
 • Proposition d'un modèle physique de l'actionneur ferroviaire type S700K DC et de six cas de défauts
 • Simulation et génération d'une dataset synthétique étiquetée
-• Développement d'un modèle de supervised machine learning avec une précision finale de 97%
-• Élaboration d'un exemplaire de dashboard pour centre de maintenance des appareils de voie`,
+• Développement d'un modèle de supervised machine learning avec une précision finale de 96% et un rappel de 100% pour les classes de défauts critiques
+• Dimensionnement et optimisation du modèle pour un déploiement sur architecture embarquée STM32H7
+• Élaboration d'un prototype de dashboard interactif pour centre de maintenance des appareils de voie affichant les plans de voie, 
+état de position et états de santé des aiguillages en temps réel, détéction des défauts et leurs criticité, Alertes temps réel, Recommendations et aide à la décision et Historique de manœuvres et alertes `,
       },
       tags: ["Edge AI", "MCSA", "Machine Learning", "MATLAB/Simulink", "Simscape", "Model-Based Design", "STM32H7", "Railway S700K", "Fault Diagnosis", "Predictive Maintenance"],
     },
