@@ -27,11 +27,11 @@ const CONFIG = {
     fr: "Ingénierie Électrique & Électronique",
   },
   bio: {
-    en: `Fresh graduate in Electrical & Electronics Engineering, specialising in Smart Electrical Systems.
+    en: `Graduate in Electrical & Electronics Engineering, specialising in Smart Electrical Systems.
 I've built hands-on experience through personal, academic projects and internships working on real-world
 systems and problems. I bring technical rigour, a fast learning curve, and a genuine passion for the
 infrastructure that powers the modern world.`,
-    fr: `Ingénieur fraîchement diplômé en Électrique & Électronique, spécialisé en Systèmes Électriques Intelligents.
+    fr: `Ingénieur diplômé en Électrique & Électronique, spécialisé en Systèmes Électriques Intelligents.
 Mes stages et projets personnels et académiques m'ont permis de travailler sur des systèmes et des
 problématiques réels. Je combine rigueur technique, rapidité d'apprentissage et une vraie passion pour
 les infrastructures qui font tourner le monde moderne.`,
