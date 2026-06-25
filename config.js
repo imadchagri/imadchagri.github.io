@@ -3,7 +3,7 @@ const CONFIG = {
   /* ── PERSONAL INFO ──────────────────────────────────────── */
   name:   "Imad CHAGRI",
   avatar: "aizen.jpg",
-  cvFile: "cv.pdf",
+  cvFile: "CV_2026_IMAD_CHAGRI.pdf",
 
     /* ── SITE SETTINGS (safe to edit) ───────────────────────────
      palette:        "blue" | "indigo" | "emerald" | "amber" | "mono"
