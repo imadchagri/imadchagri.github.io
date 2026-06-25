@@ -2,7 +2,7 @@ const CONFIG = {
 
   /* ── PERSONAL INFO ──────────────────────────────────────── */
   name:   "Imad CHAGRI",
-  avatar: "",
+  avatar: "aizen.jpg",
   cvFile: "cv.pdf",
 
   title: {
