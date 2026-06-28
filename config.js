@@ -553,7 +553,7 @@ Résultats :
   ],
 
   /* ── BLOG / ARTICLES ─────────────────────────────────────── */
-  blog: [
+  /*blog: [
     {
       title:   { en: "Understanding Smart Grid Architecture",          fr: "Comprendre l'Architecture des Réseaux Intelligents" },
       summary: { en: "A practical breakdown of how modern smart grids differ from traditional power distribution networks.", fr: "Une analyse pratique des différences entre les réseaux intelligents modernes et les réseaux traditionnels." },
@@ -568,6 +568,6 @@ Résultats :
       link:    "#",
       tag:     "MATLAB",
     },
-  ],
+  ],*/
 
 };
